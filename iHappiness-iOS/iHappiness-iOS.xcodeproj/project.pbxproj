@@ -95,6 +95,7 @@
 		B56BA9A215CBF52500C650AD /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B56BA9A115CBF52500C650AD /* libz.dylib */; };
 		B56BA9A415CBF55F00C650AD /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B56BA9A315CBF55F00C650AD /* Security.framework */; };
 		B56BA9A515CBF58A00C650AD /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B56BA9A315CBF55F00C650AD /* Security.framework */; };
+		B56BA9A615CBF63F00C650AD /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B56BA99D15CBF50B00C650AD /* CFNetwork.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -218,6 +219,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B56BA9A615CBF63F00C650AD /* CFNetwork.framework in Frameworks */,
 				B56BA9A515CBF58A00C650AD /* Security.framework in Frameworks */,
 				B56BA99415CBF40D00C650AD /* libnoArcLibreries.a in Frameworks */,
 				34AC0E0E15CBEF73006ED814 /* UIKit.framework in Frameworks */,
@@ -677,7 +679,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PROVISIONING_PROFILE = "8E7F0B4F-6BEF-49E8-A1C7-70D3E1686580";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "8E7F0B4F-6BEF-49E8-A1C7-70D3E1686580";
 				SDKROOT = iphoneos;
@@ -699,7 +701,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
