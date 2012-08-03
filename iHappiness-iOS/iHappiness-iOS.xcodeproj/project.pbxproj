@@ -96,55 +96,6 @@
 		B56BA9A415CBF55F00C650AD /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B56BA9A315CBF55F00C650AD /* Security.framework */; };
 		B56BA9A515CBF58A00C650AD /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B56BA9A315CBF55F00C650AD /* Security.framework */; };
 		B56BA9A615CBF63F00C650AD /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B56BA99D15CBF50B00C650AD /* CFNetwork.framework */; };
-		C1F99B5C15CC204E001C9FB8 /* MVYNavigationController.h in Headers */ = {isa = PBXBuildFile; fileRef = C1F99B2B15CC204E001C9FB8 /* MVYNavigationController.h */; };
-		C1F99B5D15CC204E001C9FB8 /* MVYNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1F99B2C15CC204E001C9FB8 /* MVYNavigationController.m */; };
-		C1F99B5E15CC204E001C9FB8 /* MVYTabbarViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = C1F99B2D15CC204E001C9FB8 /* MVYTabbarViewController.h */; };
-		C1F99B5F15CC204E001C9FB8 /* MVYTabbarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1F99B2E15CC204E001C9FB8 /* MVYTabbarViewController.m */; };
-		C1F99B6015CC204E001C9FB8 /* MVYViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = C1F99B2F15CC204E001C9FB8 /* MVYViewController.h */; };
-		C1F99B6115CC204E001C9FB8 /* MVYViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1F99B3015CC204E001C9FB8 /* MVYViewController.m */; };
-		C1F99B6215CC204E001C9FB8 /* AsynchronousImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = C1F99B3215CC204E001C9FB8 /* AsynchronousImageView.h */; };
-		C1F99B6315CC204E001C9FB8 /* AsynchronousImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = C1F99B3315CC204E001C9FB8 /* AsynchronousImageView.m */; };
-		C1F99B6415CC204E001C9FB8 /* GTMDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = C1F99B3415CC204E001C9FB8 /* GTMDefines.h */; };
-		C1F99B6515CC204E001C9FB8 /* GTMNSString+HTML.h in Headers */ = {isa = PBXBuildFile; fileRef = C1F99B3515CC204E001C9FB8 /* GTMNSString+HTML.h */; };
-		C1F99B6615CC204E001C9FB8 /* GTMNSString+HTML.m in Sources */ = {isa = PBXBuildFile; fileRef = C1F99B3615CC204E001C9FB8 /* GTMNSString+HTML.m */; };
-		C1F99B6715CC204E001C9FB8 /* NSDate+Extras.h in Headers */ = {isa = PBXBuildFile; fileRef = C1F99B3715CC204E001C9FB8 /* NSDate+Extras.h */; };
-		C1F99B6815CC204E001C9FB8 /* NSDate+Extras.m in Sources */ = {isa = PBXBuildFile; fileRef = C1F99B3815CC204E001C9FB8 /* NSDate+Extras.m */; };
-		C1F99B6915CC204E001C9FB8 /* NSObjectExtras.h in Headers */ = {isa = PBXBuildFile; fileRef = C1F99B3915CC204E001C9FB8 /* NSObjectExtras.h */; };
-		C1F99B6A15CC204E001C9FB8 /* NSObjectExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = C1F99B3A15CC204E001C9FB8 /* NSObjectExtras.m */; };
-		C1F99B6B15CC204E001C9FB8 /* NSStringExtras.h in Headers */ = {isa = PBXBuildFile; fileRef = C1F99B3B15CC204E001C9FB8 /* NSStringExtras.h */; };
-		C1F99B6C15CC204E001C9FB8 /* NSStringExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = C1F99B3C15CC204E001C9FB8 /* NSStringExtras.m */; };
-		C1F99B6D15CC204E001C9FB8 /* UIColorExtras.h in Headers */ = {isa = PBXBuildFile; fileRef = C1F99B3D15CC204E001C9FB8 /* UIColorExtras.h */; };
-		C1F99B6E15CC204E001C9FB8 /* UIColorExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = C1F99B3E15CC204E001C9FB8 /* UIColorExtras.m */; };
-		C1F99B6F15CC204E001C9FB8 /* UIImageExtras.h in Headers */ = {isa = PBXBuildFile; fileRef = C1F99B3F15CC204E001C9FB8 /* UIImageExtras.h */; };
-		C1F99B7015CC204E001C9FB8 /* UIImageExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = C1F99B4015CC204E001C9FB8 /* UIImageExtras.m */; };
-		C1F99B7115CC204E001C9FB8 /* UILabelExtras.h in Headers */ = {isa = PBXBuildFile; fileRef = C1F99B4115CC204E001C9FB8 /* UILabelExtras.h */; };
-		C1F99B7215CC204E001C9FB8 /* UILabelExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = C1F99B4215CC204E001C9FB8 /* UILabelExtras.m */; };
-		C1F99B7315CC204E001C9FB8 /* UIViewExtras.h in Headers */ = {isa = PBXBuildFile; fileRef = C1F99B4315CC204E001C9FB8 /* UIViewExtras.h */; };
-		C1F99B7415CC204E001C9FB8 /* UIViewExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = C1F99B4415CC204E001C9FB8 /* UIViewExtras.m */; };
-		C1F99B7515CC204E001C9FB8 /* UIWebViewExtras.h in Headers */ = {isa = PBXBuildFile; fileRef = C1F99B4515CC204E001C9FB8 /* UIWebViewExtras.h */; };
-		C1F99B7615CC204E001C9FB8 /* UIWebViewExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = C1F99B4615CC204E001C9FB8 /* UIWebViewExtras.m */; };
-		C1F99B7715CC204E001C9FB8 /* MVYImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = C1F99B4915CC204E001C9FB8 /* MVYImageView.h */; };
-		C1F99B7815CC204E001C9FB8 /* MVYImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = C1F99B4A15CC204E001C9FB8 /* MVYImageView.m */; };
-		C1F99B7915CC204E001C9FB8 /* RemoteImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = C1F99B4B15CC204E001C9FB8 /* RemoteImageView.h */; };
-		C1F99B7A15CC204E001C9FB8 /* RemoteImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = C1F99B4C15CC204E001C9FB8 /* RemoteImageView.m */; };
-		C1F99B7B15CC204E001C9FB8 /* MVYPageControl.h in Headers */ = {isa = PBXBuildFile; fileRef = C1F99B4E15CC204E001C9FB8 /* MVYPageControl.h */; };
-		C1F99B7C15CC204E001C9FB8 /* MVYPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = C1F99B4F15CC204E001C9FB8 /* MVYPageControl.m */; };
-		C1F99B7D15CC204E001C9FB8 /* MVYPageIndicator.h in Headers */ = {isa = PBXBuildFile; fileRef = C1F99B5015CC204E001C9FB8 /* MVYPageIndicator.h */; };
-		C1F99B7E15CC204E001C9FB8 /* MVYPageIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = C1F99B5115CC204E001C9FB8 /* MVYPageIndicator.m */; };
-		C1F99B7F15CC204E001C9FB8 /* PageViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = C1F99B5215CC204E001C9FB8 /* PageViewController.h */; };
-		C1F99B8015CC204E001C9FB8 /* PageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1F99B5315CC204E001C9FB8 /* PageViewController.m */; };
-		C1F99B8115CC204E001C9FB8 /* VSFPageControl.h in Headers */ = {isa = PBXBuildFile; fileRef = C1F99B5415CC204E001C9FB8 /* VSFPageControl.h */; };
-		C1F99B8215CC204E001C9FB8 /* VSFPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = C1F99B5515CC204E001C9FB8 /* VSFPageControl.m */; };
-		C1F99B8315CC204E001C9FB8 /* MVYPickerView.h in Headers */ = {isa = PBXBuildFile; fileRef = C1F99B5715CC204E001C9FB8 /* MVYPickerView.h */; };
-		C1F99B8415CC204E001C9FB8 /* MVYPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = C1F99B5815CC204E001C9FB8 /* MVYPickerView.m */; };
-		C1F99B8515CC204E001C9FB8 /* MVYRotatorViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = C1F99B5A15CC204E001C9FB8 /* MVYRotatorViewController.h */; };
-		C1F99B8615CC204E001C9FB8 /* MVYRotatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1F99B5B15CC204E001C9FB8 /* MVYRotatorViewController.m */; };
-		C1F99B8A15CC2089001C9FB8 /* MobiveryRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = C1F99B8815CC2089001C9FB8 /* MobiveryRequest.h */; };
-		C1F99B8B15CC2089001C9FB8 /* MobiveryRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = C1F99B8915CC2089001C9FB8 /* MobiveryRequest.m */; };
-		C1F99B9015CC2167001C9FB8 /* LoginDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = C1F99B8F15CC2167001C9FB8 /* LoginDAO.m */; };
-		C1F99B9415CC2562001C9FB8 /* Reachability.h in Headers */ = {isa = PBXBuildFile; fileRef = C1F99B9215CC2562001C9FB8 /* Reachability.h */; };
-		C1F99B9515CC2562001C9FB8 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = C1F99B9315CC2562001C9FB8 /* Reachability.m */; };
-		C1F99B9615CC26AE001C9FB8 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B56BA99F15CBF51100C650AD /* SystemConfiguration.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -261,55 +212,6 @@
 		B56BA99F15CBF51100C650AD /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		B56BA9A115CBF52500C650AD /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		B56BA9A315CBF55F00C650AD /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
-		C1F99B2B15CC204E001C9FB8 /* MVYNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVYNavigationController.h; sourceTree = "<group>"; };
-		C1F99B2C15CC204E001C9FB8 /* MVYNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVYNavigationController.m; sourceTree = "<group>"; };
-		C1F99B2D15CC204E001C9FB8 /* MVYTabbarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVYTabbarViewController.h; sourceTree = "<group>"; };
-		C1F99B2E15CC204E001C9FB8 /* MVYTabbarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVYTabbarViewController.m; sourceTree = "<group>"; };
-		C1F99B2F15CC204E001C9FB8 /* MVYViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVYViewController.h; sourceTree = "<group>"; };
-		C1F99B3015CC204E001C9FB8 /* MVYViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVYViewController.m; sourceTree = "<group>"; };
-		C1F99B3215CC204E001C9FB8 /* AsynchronousImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsynchronousImageView.h; sourceTree = "<group>"; };
-		C1F99B3315CC204E001C9FB8 /* AsynchronousImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsynchronousImageView.m; sourceTree = "<group>"; };
-		C1F99B3415CC204E001C9FB8 /* GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
-		C1F99B3515CC204E001C9FB8 /* GTMNSString+HTML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GTMNSString+HTML.h"; sourceTree = "<group>"; };
-		C1F99B3615CC204E001C9FB8 /* GTMNSString+HTML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GTMNSString+HTML.m"; sourceTree = "<group>"; };
-		C1F99B3715CC204E001C9FB8 /* NSDate+Extras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Extras.h"; sourceTree = "<group>"; };
-		C1F99B3815CC204E001C9FB8 /* NSDate+Extras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Extras.m"; sourceTree = "<group>"; };
-		C1F99B3915CC204E001C9FB8 /* NSObjectExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSObjectExtras.h; sourceTree = "<group>"; };
-		C1F99B3A15CC204E001C9FB8 /* NSObjectExtras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSObjectExtras.m; sourceTree = "<group>"; };
-		C1F99B3B15CC204E001C9FB8 /* NSStringExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSStringExtras.h; sourceTree = "<group>"; };
-		C1F99B3C15CC204E001C9FB8 /* NSStringExtras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSStringExtras.m; sourceTree = "<group>"; };
-		C1F99B3D15CC204E001C9FB8 /* UIColorExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIColorExtras.h; sourceTree = "<group>"; };
-		C1F99B3E15CC204E001C9FB8 /* UIColorExtras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIColorExtras.m; sourceTree = "<group>"; };
-		C1F99B3F15CC204E001C9FB8 /* UIImageExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIImageExtras.h; sourceTree = "<group>"; };
-		C1F99B4015CC204E001C9FB8 /* UIImageExtras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIImageExtras.m; sourceTree = "<group>"; };
-		C1F99B4115CC204E001C9FB8 /* UILabelExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UILabelExtras.h; sourceTree = "<group>"; };
-		C1F99B4215CC204E001C9FB8 /* UILabelExtras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UILabelExtras.m; sourceTree = "<group>"; };
-		C1F99B4315CC204E001C9FB8 /* UIViewExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewExtras.h; sourceTree = "<group>"; };
-		C1F99B4415CC204E001C9FB8 /* UIViewExtras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIViewExtras.m; sourceTree = "<group>"; };
-		C1F99B4515CC204E001C9FB8 /* UIWebViewExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIWebViewExtras.h; sourceTree = "<group>"; };
-		C1F99B4615CC204E001C9FB8 /* UIWebViewExtras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIWebViewExtras.m; sourceTree = "<group>"; };
-		C1F99B4915CC204E001C9FB8 /* MVYImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVYImageView.h; sourceTree = "<group>"; };
-		C1F99B4A15CC204E001C9FB8 /* MVYImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVYImageView.m; sourceTree = "<group>"; };
-		C1F99B4B15CC204E001C9FB8 /* RemoteImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RemoteImageView.h; sourceTree = "<group>"; };
-		C1F99B4C15CC204E001C9FB8 /* RemoteImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RemoteImageView.m; sourceTree = "<group>"; };
-		C1F99B4E15CC204E001C9FB8 /* MVYPageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVYPageControl.h; sourceTree = "<group>"; };
-		C1F99B4F15CC204E001C9FB8 /* MVYPageControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVYPageControl.m; sourceTree = "<group>"; };
-		C1F99B5015CC204E001C9FB8 /* MVYPageIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVYPageIndicator.h; sourceTree = "<group>"; };
-		C1F99B5115CC204E001C9FB8 /* MVYPageIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVYPageIndicator.m; sourceTree = "<group>"; };
-		C1F99B5215CC204E001C9FB8 /* PageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageViewController.h; sourceTree = "<group>"; };
-		C1F99B5315CC204E001C9FB8 /* PageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageViewController.m; sourceTree = "<group>"; };
-		C1F99B5415CC204E001C9FB8 /* VSFPageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSFPageControl.h; sourceTree = "<group>"; };
-		C1F99B5515CC204E001C9FB8 /* VSFPageControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSFPageControl.m; sourceTree = "<group>"; };
-		C1F99B5715CC204E001C9FB8 /* MVYPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVYPickerView.h; sourceTree = "<group>"; };
-		C1F99B5815CC204E001C9FB8 /* MVYPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVYPickerView.m; sourceTree = "<group>"; };
-		C1F99B5A15CC204E001C9FB8 /* MVYRotatorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVYRotatorViewController.h; sourceTree = "<group>"; };
-		C1F99B5B15CC204E001C9FB8 /* MVYRotatorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVYRotatorViewController.m; sourceTree = "<group>"; };
-		C1F99B8815CC2089001C9FB8 /* MobiveryRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MobiveryRequest.h; sourceTree = "<group>"; };
-		C1F99B8915CC2089001C9FB8 /* MobiveryRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MobiveryRequest.m; sourceTree = "<group>"; };
-		C1F99B8E15CC2167001C9FB8 /* LoginDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginDAO.h; sourceTree = "<group>"; };
-		C1F99B8F15CC2167001C9FB8 /* LoginDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginDAO.m; sourceTree = "<group>"; };
-		C1F99B9215CC2562001C9FB8 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
-		C1F99B9315CC2562001C9FB8 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -317,7 +219,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C1F99B9615CC26AE001C9FB8 /* SystemConfiguration.framework in Frameworks */,
 				B56BA9A615CBF63F00C650AD /* CFNetwork.framework in Frameworks */,
 				B56BA9A515CBF58A00C650AD /* Security.framework in Frameworks */,
 				B56BA99415CBF40D00C650AD /* libnoArcLibreries.a in Frameworks */,
@@ -379,7 +280,6 @@
 		34AC0E1315CBEF73006ED814 /* iHappiness-iOS */ = {
 			isa = PBXGroup;
 			children = (
-				C1F99B8C15CC214C001C9FB8 /* Classes */,
 				B56BA85B15CBF28A00C650AD /* Libraries */,
 				34AC0E1C15CBEF73006ED814 /* AppDelegate.h */,
 				34AC0E1D15CBEF73006ED814 /* AppDelegate.m */,
@@ -405,10 +305,7 @@
 		B56BA85B15CBF28A00C650AD /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
-				C1F99B2915CC204E001C9FB8 /* ateneo-ui */,
 				B56BA8F415CBF36E00C650AD /* DropboxSDK */,
-				C1F99B9115CC2562001C9FB8 /* Reachability */,
-				C1F99B8715CC2089001C9FB8 /* Request */,
 			);
 			path = Libraries;
 			sourceTree = "<group>";
@@ -552,147 +449,6 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		C1F99B2915CC204E001C9FB8 /* ateneo-ui */ = {
-			isa = PBXGroup;
-			children = (
-				C1F99B2A15CC204E001C9FB8 /* controllers */,
-				C1F99B3115CC204E001C9FB8 /* extras */,
-				C1F99B4715CC204E001C9FB8 /* widgets */,
-			);
-			path = "ateneo-ui";
-			sourceTree = "<group>";
-		};
-		C1F99B2A15CC204E001C9FB8 /* controllers */ = {
-			isa = PBXGroup;
-			children = (
-				C1F99B2B15CC204E001C9FB8 /* MVYNavigationController.h */,
-				C1F99B2C15CC204E001C9FB8 /* MVYNavigationController.m */,
-				C1F99B2D15CC204E001C9FB8 /* MVYTabbarViewController.h */,
-				C1F99B2E15CC204E001C9FB8 /* MVYTabbarViewController.m */,
-				C1F99B2F15CC204E001C9FB8 /* MVYViewController.h */,
-				C1F99B3015CC204E001C9FB8 /* MVYViewController.m */,
-			);
-			path = controllers;
-			sourceTree = "<group>";
-		};
-		C1F99B3115CC204E001C9FB8 /* extras */ = {
-			isa = PBXGroup;
-			children = (
-				C1F99B3215CC204E001C9FB8 /* AsynchronousImageView.h */,
-				C1F99B3315CC204E001C9FB8 /* AsynchronousImageView.m */,
-				C1F99B3415CC204E001C9FB8 /* GTMDefines.h */,
-				C1F99B3515CC204E001C9FB8 /* GTMNSString+HTML.h */,
-				C1F99B3615CC204E001C9FB8 /* GTMNSString+HTML.m */,
-				C1F99B3715CC204E001C9FB8 /* NSDate+Extras.h */,
-				C1F99B3815CC204E001C9FB8 /* NSDate+Extras.m */,
-				C1F99B3915CC204E001C9FB8 /* NSObjectExtras.h */,
-				C1F99B3A15CC204E001C9FB8 /* NSObjectExtras.m */,
-				C1F99B3B15CC204E001C9FB8 /* NSStringExtras.h */,
-				C1F99B3C15CC204E001C9FB8 /* NSStringExtras.m */,
-				C1F99B3D15CC204E001C9FB8 /* UIColorExtras.h */,
-				C1F99B3E15CC204E001C9FB8 /* UIColorExtras.m */,
-				C1F99B3F15CC204E001C9FB8 /* UIImageExtras.h */,
-				C1F99B4015CC204E001C9FB8 /* UIImageExtras.m */,
-				C1F99B4115CC204E001C9FB8 /* UILabelExtras.h */,
-				C1F99B4215CC204E001C9FB8 /* UILabelExtras.m */,
-				C1F99B4315CC204E001C9FB8 /* UIViewExtras.h */,
-				C1F99B4415CC204E001C9FB8 /* UIViewExtras.m */,
-				C1F99B4515CC204E001C9FB8 /* UIWebViewExtras.h */,
-				C1F99B4615CC204E001C9FB8 /* UIWebViewExtras.m */,
-			);
-			path = extras;
-			sourceTree = "<group>";
-		};
-		C1F99B4715CC204E001C9FB8 /* widgets */ = {
-			isa = PBXGroup;
-			children = (
-				C1F99B4815CC204E001C9FB8 /* images */,
-				C1F99B4D15CC204E001C9FB8 /* pageControls */,
-				C1F99B5615CC204E001C9FB8 /* picker */,
-				C1F99B5915CC204E001C9FB8 /* rotator */,
-			);
-			path = widgets;
-			sourceTree = "<group>";
-		};
-		C1F99B4815CC204E001C9FB8 /* images */ = {
-			isa = PBXGroup;
-			children = (
-				C1F99B4915CC204E001C9FB8 /* MVYImageView.h */,
-				C1F99B4A15CC204E001C9FB8 /* MVYImageView.m */,
-				C1F99B4B15CC204E001C9FB8 /* RemoteImageView.h */,
-				C1F99B4C15CC204E001C9FB8 /* RemoteImageView.m */,
-			);
-			path = images;
-			sourceTree = "<group>";
-		};
-		C1F99B4D15CC204E001C9FB8 /* pageControls */ = {
-			isa = PBXGroup;
-			children = (
-				C1F99B4E15CC204E001C9FB8 /* MVYPageControl.h */,
-				C1F99B4F15CC204E001C9FB8 /* MVYPageControl.m */,
-				C1F99B5015CC204E001C9FB8 /* MVYPageIndicator.h */,
-				C1F99B5115CC204E001C9FB8 /* MVYPageIndicator.m */,
-				C1F99B5215CC204E001C9FB8 /* PageViewController.h */,
-				C1F99B5315CC204E001C9FB8 /* PageViewController.m */,
-				C1F99B5415CC204E001C9FB8 /* VSFPageControl.h */,
-				C1F99B5515CC204E001C9FB8 /* VSFPageControl.m */,
-			);
-			path = pageControls;
-			sourceTree = "<group>";
-		};
-		C1F99B5615CC204E001C9FB8 /* picker */ = {
-			isa = PBXGroup;
-			children = (
-				C1F99B5715CC204E001C9FB8 /* MVYPickerView.h */,
-				C1F99B5815CC204E001C9FB8 /* MVYPickerView.m */,
-			);
-			path = picker;
-			sourceTree = "<group>";
-		};
-		C1F99B5915CC204E001C9FB8 /* rotator */ = {
-			isa = PBXGroup;
-			children = (
-				C1F99B5A15CC204E001C9FB8 /* MVYRotatorViewController.h */,
-				C1F99B5B15CC204E001C9FB8 /* MVYRotatorViewController.m */,
-			);
-			path = rotator;
-			sourceTree = "<group>";
-		};
-		C1F99B8715CC2089001C9FB8 /* Request */ = {
-			isa = PBXGroup;
-			children = (
-				C1F99B8815CC2089001C9FB8 /* MobiveryRequest.h */,
-				C1F99B8915CC2089001C9FB8 /* MobiveryRequest.m */,
-			);
-			path = Request;
-			sourceTree = "<group>";
-		};
-		C1F99B8C15CC214C001C9FB8 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				C1F99B8D15CC214C001C9FB8 /* DAO */,
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
-		C1F99B8D15CC214C001C9FB8 /* DAO */ = {
-			isa = PBXGroup;
-			children = (
-				C1F99B8E15CC2167001C9FB8 /* LoginDAO.h */,
-				C1F99B8F15CC2167001C9FB8 /* LoginDAO.m */,
-			);
-			path = DAO;
-			sourceTree = "<group>";
-		};
-		C1F99B9115CC2562001C9FB8 /* Reachability */ = {
-			isa = PBXGroup;
-			children = (
-				C1F99B9215CC2562001C9FB8 /* Reachability.h */,
-				C1F99B9315CC2562001C9FB8 /* Reachability.m */,
-			);
-			path = Reachability;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -738,30 +494,6 @@
 				B56BA98C15CBF36E00C650AD /* NSURL+MPURLParameterAdditions.h in Headers */,
 				B56BA98E15CBF36E00C650AD /* NSURLResponse+Encoding.h in Headers */,
 				B56BA99015CBF36E00C650AD /* NSString+Dropbox.h in Headers */,
-				C1F99B5C15CC204E001C9FB8 /* MVYNavigationController.h in Headers */,
-				C1F99B5E15CC204E001C9FB8 /* MVYTabbarViewController.h in Headers */,
-				C1F99B6015CC204E001C9FB8 /* MVYViewController.h in Headers */,
-				C1F99B6215CC204E001C9FB8 /* AsynchronousImageView.h in Headers */,
-				C1F99B6415CC204E001C9FB8 /* GTMDefines.h in Headers */,
-				C1F99B6515CC204E001C9FB8 /* GTMNSString+HTML.h in Headers */,
-				C1F99B6715CC204E001C9FB8 /* NSDate+Extras.h in Headers */,
-				C1F99B6915CC204E001C9FB8 /* NSObjectExtras.h in Headers */,
-				C1F99B6B15CC204E001C9FB8 /* NSStringExtras.h in Headers */,
-				C1F99B6D15CC204E001C9FB8 /* UIColorExtras.h in Headers */,
-				C1F99B6F15CC204E001C9FB8 /* UIImageExtras.h in Headers */,
-				C1F99B7115CC204E001C9FB8 /* UILabelExtras.h in Headers */,
-				C1F99B7315CC204E001C9FB8 /* UIViewExtras.h in Headers */,
-				C1F99B7515CC204E001C9FB8 /* UIWebViewExtras.h in Headers */,
-				C1F99B7715CC204E001C9FB8 /* MVYImageView.h in Headers */,
-				C1F99B7915CC204E001C9FB8 /* RemoteImageView.h in Headers */,
-				C1F99B7B15CC204E001C9FB8 /* MVYPageControl.h in Headers */,
-				C1F99B7D15CC204E001C9FB8 /* MVYPageIndicator.h in Headers */,
-				C1F99B7F15CC204E001C9FB8 /* PageViewController.h in Headers */,
-				C1F99B8115CC204E001C9FB8 /* VSFPageControl.h in Headers */,
-				C1F99B8315CC204E001C9FB8 /* MVYPickerView.h in Headers */,
-				C1F99B8515CC204E001C9FB8 /* MVYRotatorViewController.h in Headers */,
-				C1F99B8A15CC2089001C9FB8 /* MobiveryRequest.h in Headers */,
-				C1F99B9415CC2562001C9FB8 /* Reachability.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -850,7 +582,6 @@
 				34AC0E1A15CBEF73006ED814 /* main.m in Sources */,
 				34AC0E1E15CBEF73006ED814 /* AppDelegate.m in Sources */,
 				34AC0E2115CBEF73006ED814 /* ViewController.m in Sources */,
-				C1F99B9015CC2167001C9FB8 /* LoginDAO.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -892,29 +623,6 @@
 				B56BA98D15CBF36E00C650AD /* NSURL+MPURLParameterAdditions.m in Sources */,
 				B56BA98F15CBF36E00C650AD /* NSURLResponse+Encoding.m in Sources */,
 				B56BA99115CBF36E00C650AD /* NSString+Dropbox.m in Sources */,
-				C1F99B5D15CC204E001C9FB8 /* MVYNavigationController.m in Sources */,
-				C1F99B5F15CC204E001C9FB8 /* MVYTabbarViewController.m in Sources */,
-				C1F99B6115CC204E001C9FB8 /* MVYViewController.m in Sources */,
-				C1F99B6315CC204E001C9FB8 /* AsynchronousImageView.m in Sources */,
-				C1F99B6615CC204E001C9FB8 /* GTMNSString+HTML.m in Sources */,
-				C1F99B6815CC204E001C9FB8 /* NSDate+Extras.m in Sources */,
-				C1F99B6A15CC204E001C9FB8 /* NSObjectExtras.m in Sources */,
-				C1F99B6C15CC204E001C9FB8 /* NSStringExtras.m in Sources */,
-				C1F99B6E15CC204E001C9FB8 /* UIColorExtras.m in Sources */,
-				C1F99B7015CC204E001C9FB8 /* UIImageExtras.m in Sources */,
-				C1F99B7215CC204E001C9FB8 /* UILabelExtras.m in Sources */,
-				C1F99B7415CC204E001C9FB8 /* UIViewExtras.m in Sources */,
-				C1F99B7615CC204E001C9FB8 /* UIWebViewExtras.m in Sources */,
-				C1F99B7815CC204E001C9FB8 /* MVYImageView.m in Sources */,
-				C1F99B7A15CC204E001C9FB8 /* RemoteImageView.m in Sources */,
-				C1F99B7C15CC204E001C9FB8 /* MVYPageControl.m in Sources */,
-				C1F99B7E15CC204E001C9FB8 /* MVYPageIndicator.m in Sources */,
-				C1F99B8015CC204E001C9FB8 /* PageViewController.m in Sources */,
-				C1F99B8215CC204E001C9FB8 /* VSFPageControl.m in Sources */,
-				C1F99B8415CC204E001C9FB8 /* MVYPickerView.m in Sources */,
-				C1F99B8615CC204E001C9FB8 /* MVYRotatorViewController.m in Sources */,
-				C1F99B8B15CC2089001C9FB8 /* MobiveryRequest.m in Sources */,
-				C1F99B9515CC2562001C9FB8 /* Reachability.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
