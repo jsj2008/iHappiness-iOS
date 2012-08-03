@@ -247,10 +247,6 @@
 		34AC0DFE15CBEF72006ED814 = {
 			isa = PBXGroup;
 			children = (
-				B56BA9A315CBF55F00C650AD /* Security.framework */,
-				B56BA9A115CBF52500C650AD /* libz.dylib */,
-				B56BA99F15CBF51100C650AD /* SystemConfiguration.framework */,
-				B56BA99D15CBF50B00C650AD /* CFNetwork.framework */,
 				34AC0E1315CBEF73006ED814 /* iHappiness-iOS */,
 				B56BA8EA15CBF33200C650AD /* noArcLibreries */,
 				34AC0E0C15CBEF73006ED814 /* Frameworks */,
@@ -270,6 +266,10 @@
 		34AC0E0C15CBEF73006ED814 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B56BA9A315CBF55F00C650AD /* Security.framework */,
+				B56BA9A115CBF52500C650AD /* libz.dylib */,
+				B56BA99F15CBF51100C650AD /* SystemConfiguration.framework */,
+				B56BA99D15CBF50B00C650AD /* CFNetwork.framework */,
 				34AC0E0D15CBEF73006ED814 /* UIKit.framework */,
 				34AC0E0F15CBEF73006ED814 /* Foundation.framework */,
 				34AC0E1115CBEF73006ED814 /* CoreGraphics.framework */,
