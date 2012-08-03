@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "LoginDAO.h"
 
 @interface ViewController ()
 
@@ -18,6 +19,8 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    [[LoginDAO sharedInstance] requestLoginWithUser:@"pedroduran" andPassword:@"rocko#23"];
 }
 
 - (void)viewDidUnload
