@@ -22,10 +22,10 @@
 
 @property(nonatomic,strong) MobiveryRequest *request;
 @property(nonatomic,strong) NSString *userName;
+@property(nonatomic,getter = isUserLogged) BOOL userLogged;
 
 + (LoginDAO*)sharedInstance;
 - (void)requestLoginWithUser:(NSString*)userName andPassword:(NSString*)password;
 - (void)logout;
-- (BOOL)isUserLogged;
 
 @end

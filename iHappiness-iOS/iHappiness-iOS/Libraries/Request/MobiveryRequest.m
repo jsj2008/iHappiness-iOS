@@ -206,7 +206,7 @@ static MobiveryRequest* staticMobiveryRequest_;
     [theRequest setHTTPShouldHandleCookies:TRUE];
     [theRequest setHTTPMethod:self.method];
     
-    //NSLog(@"self.cookie %@",[[NSUserDefaults standardUserDefaults] valueForKey:@"cookie"]);
+    NSLog(@"self.cookie %@",[[NSUserDefaults standardUserDefaults] valueForKey:@"cookie"]);
     if ([[NSUserDefaults standardUserDefaults] valueForKey:@"cookie"] && ![[[NSUserDefaults standardUserDefaults] valueForKey:@"cookie"] isEqualToString:@""]) {
         [theRequest setValue:[[NSUserDefaults standardUserDefaults] valueForKey:@"cookie"] forHTTPHeaderField:@"Set-Cookie"];
     }
@@ -235,7 +235,8 @@ static MobiveryRequest* staticMobiveryRequest_;
     NSString *encodedLoginData = [self encode:[loginString dataUsingEncoding:NSUTF8StringEncoding]];  
     
     // create the contents of the header   
-    NSString *authHeader = [@"Basic " stringByAppendingFormat:@"%@", encodedLoginData];  
+    NSString *authHeader = [@"Basic " stringByAppendingFormat:@"%@", encodedLoginData];
+//    NSString *authHeader = [@"Basic " stringByAppendingFormat:@"%@", loginString];
     
     theRequest=[NSMutableURLRequest requestWithURL:[NSURL URLWithString:Url]
                                        cachePolicy:NSURLRequestReloadIgnoringCacheData
@@ -243,6 +244,9 @@ static MobiveryRequest* staticMobiveryRequest_;
     
     // add the header to the request.  Here's the $$$!!!  
     [theRequest addValue:authHeader forHTTPHeaderField:@"Authorization"];
+    
+//    [theRequest addValue:@"application/xml" forHTTPHeaderField:@"Accept"];
+//    [theRequest addValue:@"application/xml" forHTTPHeaderField:@"Content-Type"];
     
     if ([self.method isEqualToString:@"POST"]) {
         

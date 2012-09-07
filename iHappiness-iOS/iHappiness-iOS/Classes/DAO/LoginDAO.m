@@ -27,6 +27,7 @@ static LoginDAO* staticLoginDAO_;
 
 @synthesize request = _request;
 @synthesize userName = _userName;
+@synthesize userLogged = _userLogged;
 
 #pragma mark - Public Methods
 
@@ -99,6 +100,12 @@ static LoginDAO* staticLoginDAO_;
     NSString *dataString = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
     if( LOG_RESPONSES ) NSLog(@"<<< LoginDAO Response:%@", dataString);
     
+    if ([dataString rangeOfString:@"<account>"].location!=NSNotFound) {
+        [[NSNotificationCenter defaultCenter] postNotificationName:kServiceLoginOK object:nil];
+    } else {
+        [[NSNotificationCenter defaultCenter] postNotificationName:kServiceLoginFail object:nil];
+    }
+    
     
 }
 
@@ -108,7 +115,7 @@ static LoginDAO* staticLoginDAO_;
     if( LOG_RESPONSES ) NSLog(@"<<< LoginDAO Response ERROR:%@", anError);
     
     //notifies the failure
-    [[NSNotificationCenter defaultCenter] postNotificationName:kServiceLoginOK object:self];
+    [[NSNotificationCenter defaultCenter] postNotificationName:kServiceLoginFail object:nil];
 }
 
 @end
