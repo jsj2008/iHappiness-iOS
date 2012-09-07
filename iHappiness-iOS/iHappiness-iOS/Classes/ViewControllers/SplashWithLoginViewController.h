@@ -10,16 +10,26 @@
 
 @interface SplashWithLoginViewController : UIViewController
 
-@property (weak, nonatomic) IBOutlet UIImageView *logoImageView;
-@property (weak, nonatomic) IBOutlet UITextField *userTxtFld;
-@property (weak, nonatomic) IBOutlet UITextField *passwordTxtFld;
+@property (strong, nonatomic) IBOutlet UIImageView *logoImageView;
+@property (strong, nonatomic) IBOutlet UITextField *userTxtFld;
+@property (strong, nonatomic) IBOutlet UITextField *passwordTxtFld;
 
-@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *activityIndicator;
-@property (weak, nonatomic) IBOutlet UIButton *initSesionBtn;
-@property (weak, nonatomic) IBOutlet UIButton *cancelInitSession;
+@property (strong, nonatomic) IBOutlet UIActivityIndicatorView *activityIndicator;
+@property (strong, nonatomic) IBOutlet UIButton *initSesionBtn;
+@property (strong, nonatomic) IBOutlet UIButton *cancelInitSession;
 
 //IBActions
+/**
+ Method called when the user press the button of init sesion
+ @author Pedro
+ @since 1.0
+ */
 - (IBAction)initSesionBtnPressed:(id)sender;
+/**
+ Method called when???
+ @author Pedro
+ @since 1.0
+ */
 - (IBAction)cancelInitSesionBtnPressed:(id)sender;
 
 @end

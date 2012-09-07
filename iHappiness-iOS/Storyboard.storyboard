@@ -1,18 +1,16 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.1" toolsVersion="2549" systemVersion="12A269" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="Or3-4g-paO">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.0" toolsVersion="1938" systemVersion="10K549" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="Or3-4g-paO">
     <dependencies>
-        <deployment defaultVersion="1296" identifier="iOS"/>
         <development version="4200" identifier="xcode"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1498"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="933"/>
     </dependencies>
     <scenes>
-        <!--Splash With Login View Controller-->
         <scene sceneID="PG4-lt-se7">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TYd-JL-ELI" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="6Yz-JF-ABP" customClass="SplashWithLoginViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="CRz-Ny-qbX">
-                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="usuario" minimumFontSize="17" id="4CJ-OA-ujl" userLabel="userTextFld">
@@ -25,17 +23,17 @@
                                 <rect key="frame" x="31" y="298" width="258" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="NMg-O0-D04">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="icon-114.png" id="NMg-O0-D04">
                                 <rect key="frame" x="40" y="123" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </imageView>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" hidesWhenStopped="YES" animating="YES" style="whiteLarge" id="uxX-6E-wef">
-                                <rect key="frame" x="142" y="211" width="37" height="37"/>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" hidesWhenStopped="YES" style="whiteLarge" id="uxX-6E-wef">
+                                <rect key="frame" x="142" y="168" width="37" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="color" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="color" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </activityIndicatorView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="8HR-w9-G5y" userLabel="iniciarSesionBtn">
                                 <rect key="frame" x="99" y="337" width="122" height="37"/>
@@ -50,7 +48,6 @@
                                 </state>
                                 <connections>
                                     <action selector="initSesionBtnPressed:" destination="6Yz-JF-ABP" eventType="touchUpInside" id="N8e-dJ-vVp"/>
-                                    <segue destination="hz4-0I-X7g" kind="push" id="4SJ-ep-3fB"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="NxG-Hv-KLT" userLabel="cancelarSesionBtn">
@@ -72,6 +69,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="wY9-HB-kXu"/>
+                    <nil key="simulatedTopBarMetrics"/>
                     <connections>
                         <outlet property="activityIndicator" destination="uxX-6E-wef" id="i08-LF-f79"/>
                         <outlet property="cancelInitSession" destination="NxG-Hv-KLT" id="kV5-oi-zpe"/>
@@ -79,12 +77,12 @@
                         <outlet property="logoImageView" destination="NMg-O0-D04" id="k1N-GG-r45"/>
                         <outlet property="passwordTxtFld" destination="v6O-mz-wGP" id="g0M-Do-oCv"/>
                         <outlet property="userTxtFld" destination="4CJ-OA-ujl" id="FvR-KB-X19"/>
+                        <segue destination="hz4-0I-X7g" kind="push" identifier="LoginOk" id="VBG-LY-kHK"/>
                     </connections>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="160" y="103"/>
         </scene>
-        <!--Register View Controller - Perfil-->
         <scene sceneID="Sd0-DK-YdB">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VX9-3g-7Iq" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -134,7 +132,6 @@
             </objects>
             <point key="canvasLocation" x="160" y="716"/>
         </scene>
-        <!--uRegister1-->
         <scene sceneID="E3y-eV-woU">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f26-y6-JD7" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -160,7 +157,6 @@
             </objects>
             <point key="canvasLocation" x="714" y="103"/>
         </scene>
-        <!--View Controller - uRegister 2-->
         <scene sceneID="Xnf-UB-npT">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D3N-uH-EtA" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -185,7 +181,6 @@
             </objects>
             <point key="canvasLocation" x="1314" y="103"/>
         </scene>
-        <!--View Controller - Mi empresa-->
         <scene sceneID="eOT-wU-B38">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fnD-ts-GJo" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -210,7 +205,6 @@
             </objects>
             <point key="canvasLocation" x="3020" y="1282"/>
         </scene>
-        <!--View Controller - About us-->
         <scene sceneID="XZL-Cr-PsM">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xmt-z0-Wuz" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -235,7 +229,6 @@
             </objects>
             <point key="canvasLocation" x="3013" y="1887"/>
         </scene>
-        <!--View Controller - Check-->
         <scene sceneID="6wN-pz-hhx">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fD9-XI-0Fd" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -260,7 +253,6 @@
             </objects>
             <point key="canvasLocation" x="3013" y="692"/>
         </scene>
-        <!--View Controller - Profile-->
         <scene sceneID="Ptt-4X-Wkq">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MTG-SN-2ij" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -285,13 +277,12 @@
             </objects>
             <point key="canvasLocation" x="3013" y="103"/>
         </scene>
-        <!--Tab Bar Controller-->
         <scene sceneID="Vf8-9m-htg">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="et6-IH-b6A" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tabBarController definesPresentationContext="YES" id="TYs-6x-dWL" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="lUC-So-jOJ"/>
-                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="qwa-Lr-64c">
                         <rect key="frame" x="129" y="330" width="163" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
@@ -307,7 +298,6 @@
             </objects>
             <point key="canvasLocation" x="2489" y="103"/>
         </scene>
-        <!--View Controller - uRegister 3-->
         <scene sceneID="xpW-gp-pGC">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mCg-38-4GL" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -333,7 +323,6 @@
             </objects>
             <point key="canvasLocation" x="1919" y="103"/>
         </scene>
-        <!--Navigation Controller-->
         <scene sceneID="vzw-YZ-mk9">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UC7-6A-Z0F" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -349,6 +338,9 @@
             <point key="canvasLocation" x="-328" y="103"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="icon-114.png" width="114" height="114"/>
+    </resources>
     <classes>
         <class className="RegisterViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/RegisterViewController.h"/>
