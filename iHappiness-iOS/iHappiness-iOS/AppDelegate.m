@@ -8,7 +8,7 @@
 
 #import "AppDelegate.h"
 
-#import "ViewController.h"
+#import "SplashWithLoginViewController.h"
 
 @implementation AppDelegate
 

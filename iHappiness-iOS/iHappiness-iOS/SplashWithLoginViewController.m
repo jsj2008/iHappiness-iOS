@@ -6,14 +6,14 @@
 //  Copyright (c) 2012 mobivery. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "SplashWithLoginViewController.h"
 #import "LoginDAO.h"
 
-@interface ViewController ()
+@interface SplashWithLoginViewController ()
 
 @end
 
-@implementation ViewController
+@implementation SplashWithLoginViewController
 
 - (void)viewDidLoad
 {
