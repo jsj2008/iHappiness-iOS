@@ -8,13 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		216893D615FA01BD00AFF77A /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 216893D515FA01BD00AFF77A /* Storyboard.storyboard */; };
+		2168940B15FA143300AFF77A /* SplashWithLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2168940A15FA143300AFF77A /* SplashWithLoginViewController.m */; };
+		2168940E15FA149300AFF77A /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2168940D15FA149300AFF77A /* RegisterViewController.m */; };
 		34AC0E0E15CBEF73006ED814 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34AC0E0D15CBEF73006ED814 /* UIKit.framework */; };
 		34AC0E1015CBEF73006ED814 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34AC0E0F15CBEF73006ED814 /* Foundation.framework */; };
 		34AC0E1215CBEF73006ED814 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34AC0E1115CBEF73006ED814 /* CoreGraphics.framework */; };
 		34AC0E1815CBEF73006ED814 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 34AC0E1615CBEF73006ED814 /* InfoPlist.strings */; };
 		34AC0E1A15CBEF73006ED814 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 34AC0E1915CBEF73006ED814 /* main.m */; };
 		34AC0E1E15CBEF73006ED814 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 34AC0E1D15CBEF73006ED814 /* AppDelegate.m */; };
-		34AC0E2115CBEF73006ED814 /* SplashWithLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34AC0E2015CBEF73006ED814 /* SplashWithLoginViewController.m */; };
 		B56BA8E915CBF33200C650AD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34AC0E0F15CBEF73006ED814 /* Foundation.framework */; };
 		B56BA8EF15CBF33200C650AD /* noArcLibreries.m in Sources */ = {isa = PBXBuildFile; fileRef = B56BA8EE15CBF33200C650AD /* noArcLibreries.m */; };
 		B56BA94B15CBF36E00C650AD /* DBAccountInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = B56BA8F515CBF36E00C650AD /* DBAccountInfo.h */; };
@@ -159,6 +160,10 @@
 
 /* Begin PBXFileReference section */
 		216893D515FA01BD00AFF77A /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		2168940915FA143300AFF77A /* SplashWithLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SplashWithLoginViewController.h; sourceTree = "<group>"; };
+		2168940A15FA143300AFF77A /* SplashWithLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SplashWithLoginViewController.m; sourceTree = "<group>"; };
+		2168940C15FA149300AFF77A /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
+		2168940D15FA149300AFF77A /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
 		34AC0E0915CBEF73006ED814 /* iHappiness-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iHappiness-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		34AC0E0D15CBEF73006ED814 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		34AC0E0F15CBEF73006ED814 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -169,8 +174,6 @@
 		34AC0E1B15CBEF73006ED814 /* iHappiness-iOS-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iHappiness-iOS-Prefix.pch"; sourceTree = "<group>"; };
 		34AC0E1C15CBEF73006ED814 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		34AC0E1D15CBEF73006ED814 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		34AC0E1F15CBEF73006ED814 /* SplashWithLoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SplashWithLoginViewController.h; sourceTree = "<group>"; };
-		34AC0E2015CBEF73006ED814 /* SplashWithLoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SplashWithLoginViewController.m; sourceTree = "<group>"; };
 		B56BA8E815CBF33200C650AD /* libnoArcLibreries.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libnoArcLibreries.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		B56BA8EC15CBF33200C650AD /* noArcLibreries-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "noArcLibreries-Prefix.pch"; sourceTree = "<group>"; };
 		B56BA8ED15CBF33200C650AD /* noArcLibreries.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = noArcLibreries.h; sourceTree = "<group>"; };
@@ -343,6 +346,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2168940815FA143300AFF77A /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				2168940915FA143300AFF77A /* SplashWithLoginViewController.h */,
+				2168940A15FA143300AFF77A /* SplashWithLoginViewController.m */,
+				2168940C15FA149300AFF77A /* RegisterViewController.h */,
+				2168940D15FA149300AFF77A /* RegisterViewController.m */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
 		34AC0DFE15CBEF72006ED814 = {
 			isa = PBXGroup;
 			children = (
@@ -384,8 +398,6 @@
 				B56BA85B15CBF28A00C650AD /* Libraries */,
 				34AC0E1C15CBEF73006ED814 /* AppDelegate.h */,
 				34AC0E1D15CBEF73006ED814 /* AppDelegate.m */,
-				34AC0E1F15CBEF73006ED814 /* SplashWithLoginViewController.h */,
-				34AC0E2015CBEF73006ED814 /* SplashWithLoginViewController.m */,
 				34AC0E1415CBEF73006ED814 /* Supporting Files */,
 			);
 			path = "iHappiness-iOS";
@@ -670,6 +682,7 @@
 		C1F99B8C15CC214C001C9FB8 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				2168940815FA143300AFF77A /* ViewControllers */,
 				C1F99B8D15CC214C001C9FB8 /* DAO */,
 			);
 			path = Classes;
@@ -849,8 +862,9 @@
 			files = (
 				34AC0E1A15CBEF73006ED814 /* main.m in Sources */,
 				34AC0E1E15CBEF73006ED814 /* AppDelegate.m in Sources */,
-				34AC0E2115CBEF73006ED814 /* SplashWithLoginViewController.m in Sources */,
 				C1F99B9015CC2167001C9FB8 /* LoginDAO.m in Sources */,
+				2168940B15FA143300AFF77A /* SplashWithLoginViewController.m in Sources */,
+				2168940E15FA149300AFF77A /* RegisterViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -14,6 +14,12 @@
 @end
 
 @implementation SplashWithLoginViewController
+@synthesize logoImageView;
+@synthesize userTxtFld;
+@synthesize passwordTxtFld;
+@synthesize activityIndicator;
+@synthesize initSesionBtn;
+@synthesize cancelInitSession;
 
 - (void)viewDidLoad
 {
@@ -23,6 +29,12 @@
 
 - (void)viewDidUnload
 {
+    [self setUserTxtFld:nil];
+    [self setPasswordTxtFld:nil];
+    [self setLogoImageView:nil];
+    [self setActivityIndicator:nil];
+    [self setInitSesionBtn:nil];
+    [self setCancelInitSession:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
 }
@@ -32,4 +44,9 @@
     return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
 }
 
+- (IBAction)initSesionBtnPressed:(id)sender {
+}
+
+- (IBAction)cancelInitSesionBtnPressed:(id)sender {
+}
 @end
