@@ -122,7 +122,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Perfil" id="LZg-d2-vmn">
-                        <barButtonItem key="leftBarButtonItem" title="LogOut" id="PYs-yK-r0L"/>
+                        <barButtonItem key="leftBarButtonItem" title="LogOut" id="PYs-yK-r0L">
+                            <connections>
+                                <action selector="doLogout:" destination="hz4-0I-X7g" id="EJA-lh-OGG"/>
+                            </connections>
+                        </barButtonItem>
                         <connections>
                             <outlet property="backBarButtonItem" destination="PYs-yK-r0L" id="vNw-qu-Xym"/>
                         </connections>
@@ -341,24 +345,6 @@
     <resources>
         <image name="icon-114.png" width="114" height="114"/>
     </resources>
-    <classes>
-        <class className="RegisterViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/RegisterViewController.h"/>
-        </class>
-        <class className="SplashWithLoginViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/SplashWithLoginViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="cancelInitSesionBtnPressed:"/>
-                <relationship kind="action" name="initSesionBtnPressed:"/>
-                <relationship kind="outlet" name="activityIndicator" candidateClass="UIActivityIndicatorView"/>
-                <relationship kind="outlet" name="cancelInitSession" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="initSesionBtn" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="logoImageView" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="passwordTxtFld" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="userTxtFld" candidateClass="UITextField"/>
-            </relationships>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

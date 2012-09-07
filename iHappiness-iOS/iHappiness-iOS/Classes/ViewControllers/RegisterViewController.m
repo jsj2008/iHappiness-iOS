@@ -27,8 +27,6 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-    
-    [self.navigationController setNavigationBarHidden:NO];
 }
 
 - (void)viewDidUnload
@@ -42,4 +40,7 @@
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
+- (IBAction)doLogout:(id)sender {
+    [self.navigationController popToRootViewControllerAnimated:YES];
+}
 @end

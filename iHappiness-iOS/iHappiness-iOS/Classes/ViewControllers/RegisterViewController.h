@@ -10,4 +10,6 @@
 
 @interface RegisterViewController : UIViewController
 
+- (IBAction)doLogout:(id)sender;
+
 @end

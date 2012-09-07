@@ -100,11 +100,15 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     [self addNotifications];
+    
+    [self.navigationController setNavigationBarHidden:TRUE];
 }
 
 - (void)viewWillDisappear:(BOOL)animated
 {
     [self removeNotifications];
+    
+    [self.navigationController setNavigationBarHidden:NO];
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
@@ -115,6 +119,9 @@
 #pragma mark - Pubic methods
 
 - (IBAction)initSesionBtnPressed:(id)sender {
+    //Disable the initsession button to avoid repeating connections
+    [self.initSesionBtn setEnabled:FALSE];
+    
     NSString *userName = [self.userTxtFld text];
     NSString *password = [self.passwordTxtFld text];
     
@@ -134,7 +141,6 @@
 #pragma mark - Private methods
 
 - (void)configureView {
-    [self.navigationController setNavigationBarHidden:TRUE];
     
     [self.activityIndicator stopAnimating];
     
@@ -167,6 +173,8 @@
 
 - (void)loginComplete {
     [self.activityIndicator stopAnimating];
+    //Enable the initsession button
+    [self.initSesionBtn setEnabled:TRUE];
     
     //Show success message
     MVYToast *toast = [[MVYToast alloc] initWithMessage:@"Bienvenido mobiveriano!" andImageName:@"icon-57.png"];
@@ -178,6 +186,8 @@
 
 - (void)loginFail {
     [self.activityIndicator stopAnimating];
+    //Enable the initsession button
+    [self.initSesionBtn setEnabled:TRUE];
     
     //Show error message
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error en login" 
