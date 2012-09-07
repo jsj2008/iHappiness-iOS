@@ -146,6 +146,11 @@
 		C1F99B9415CC2562001C9FB8 /* Reachability.h in Headers */ = {isa = PBXBuildFile; fileRef = C1F99B9215CC2562001C9FB8 /* Reachability.h */; };
 		C1F99B9515CC2562001C9FB8 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = C1F99B9315CC2562001C9FB8 /* Reachability.m */; };
 		C1F99B9615CC26AE001C9FB8 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B56BA99F15CBF51100C650AD /* SystemConfiguration.framework */; };
+		C1FD477F15FA45BF00DB0434 /* MVYToast.h in Headers */ = {isa = PBXBuildFile; fileRef = C1FD477D15FA45BF00DB0434 /* MVYToast.h */; };
+		C1FD478015FA45BF00DB0434 /* MVYToast.m in Sources */ = {isa = PBXBuildFile; fileRef = C1FD477E15FA45BF00DB0434 /* MVYToast.m */; };
+		C1FD478715FA476100DB0434 /* icon-114.png in Resources */ = {isa = PBXBuildFile; fileRef = C1FD478415FA476100DB0434 /* icon-114.png */; };
+		C1FD478815FA476100DB0434 /* icon-57.png in Resources */ = {isa = PBXBuildFile; fileRef = C1FD478515FA476100DB0434 /* icon-57.png */; };
+		C1FD478915FA476100DB0434 /* icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = C1FD478615FA476100DB0434 /* icon-72.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -159,7 +164,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		216893D515FA01BD00AFF77A /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		216893D515FA01BD00AFF77A /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Storyboard.storyboard; path = ../Storyboard.storyboard; sourceTree = "<group>"; };
 		2168940915FA143300AFF77A /* SplashWithLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SplashWithLoginViewController.h; sourceTree = "<group>"; };
 		2168940A15FA143300AFF77A /* SplashWithLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SplashWithLoginViewController.m; sourceTree = "<group>"; };
 		2168940C15FA149300AFF77A /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
@@ -313,6 +318,11 @@
 		C1F99B8F15CC2167001C9FB8 /* LoginDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginDAO.m; sourceTree = "<group>"; };
 		C1F99B9215CC2562001C9FB8 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		C1F99B9315CC2562001C9FB8 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		C1FD477D15FA45BF00DB0434 /* MVYToast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVYToast.h; sourceTree = "<group>"; };
+		C1FD477E15FA45BF00DB0434 /* MVYToast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVYToast.m; sourceTree = "<group>"; };
+		C1FD478415FA476100DB0434 /* icon-114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-114.png"; sourceTree = "<group>"; };
+		C1FD478515FA476100DB0434 /* icon-57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-57.png"; sourceTree = "<group>"; };
+		C1FD478615FA476100DB0434 /* icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-72.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -360,7 +370,6 @@
 		34AC0DFE15CBEF72006ED814 = {
 			isa = PBXGroup;
 			children = (
-				216893D515FA01BD00AFF77A /* Storyboard.storyboard */,
 				34AC0E1315CBEF73006ED814 /* iHappiness-iOS */,
 				B56BA8EA15CBF33200C650AD /* noArcLibreries */,
 				34AC0E0C15CBEF73006ED814 /* Frameworks */,
@@ -396,6 +405,7 @@
 			children = (
 				C1F99B8C15CC214C001C9FB8 /* Classes */,
 				B56BA85B15CBF28A00C650AD /* Libraries */,
+				C1FD478215FA476100DB0434 /* Resources */,
 				34AC0E1C15CBEF73006ED814 /* AppDelegate.h */,
 				34AC0E1D15CBEF73006ED814 /* AppDelegate.m */,
 				34AC0E1415CBEF73006ED814 /* Supporting Files */,
@@ -406,6 +416,7 @@
 		34AC0E1415CBEF73006ED814 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				216893D515FA01BD00AFF77A /* Storyboard.storyboard */,
 				34AC0E1515CBEF73006ED814 /* iHappiness-iOS-Info.plist */,
 				34AC0E1615CBEF73006ED814 /* InfoPlist.strings */,
 				34AC0E1915CBEF73006ED814 /* main.m */,
@@ -428,6 +439,7 @@
 		B56BA8EA15CBF33200C650AD /* noArcLibreries */ = {
 			isa = PBXGroup;
 			children = (
+				C1FD477B15FA45BF00DB0434 /* Libraries */,
 				B56BA8ED15CBF33200C650AD /* noArcLibreries.h */,
 				B56BA8EE15CBF33200C650AD /* noArcLibreries.m */,
 				B56BA8EB15CBF33200C650AD /* Supporting Files */,
@@ -706,6 +718,41 @@
 			path = Reachability;
 			sourceTree = "<group>";
 		};
+		C1FD477B15FA45BF00DB0434 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				C1FD477C15FA45BF00DB0434 /* MVYToast */,
+			);
+			path = Libraries;
+			sourceTree = "<group>";
+		};
+		C1FD477C15FA45BF00DB0434 /* MVYToast */ = {
+			isa = PBXGroup;
+			children = (
+				C1FD477D15FA45BF00DB0434 /* MVYToast.h */,
+				C1FD477E15FA45BF00DB0434 /* MVYToast.m */,
+			);
+			path = MVYToast;
+			sourceTree = "<group>";
+		};
+		C1FD478215FA476100DB0434 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C1FD478315FA476100DB0434 /* Images */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C1FD478315FA476100DB0434 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				C1FD478415FA476100DB0434 /* icon-114.png */,
+				C1FD478515FA476100DB0434 /* icon-57.png */,
+				C1FD478615FA476100DB0434 /* icon-72.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -775,6 +822,7 @@
 				C1F99B8515CC204E001C9FB8 /* MVYRotatorViewController.h in Headers */,
 				C1F99B8A15CC2089001C9FB8 /* MobiveryRequest.h in Headers */,
 				C1F99B9415CC2562001C9FB8 /* Reachability.h in Headers */,
+				C1FD477F15FA45BF00DB0434 /* MVYToast.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -850,6 +898,9 @@
 			files = (
 				34AC0E1815CBEF73006ED814 /* InfoPlist.strings in Resources */,
 				216893D615FA01BD00AFF77A /* Storyboard.storyboard in Resources */,
+				C1FD478715FA476100DB0434 /* icon-114.png in Resources */,
+				C1FD478815FA476100DB0434 /* icon-57.png in Resources */,
+				C1FD478915FA476100DB0434 /* icon-72.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -929,6 +980,7 @@
 				C1F99B8615CC204E001C9FB8 /* MVYRotatorViewController.m in Sources */,
 				C1F99B8B15CC2089001C9FB8 /* MobiveryRequest.m in Sources */,
 				C1F99B9515CC2562001C9FB8 /* Reachability.m in Sources */,
+				C1FD478015FA45BF00DB0434 /* MVYToast.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
