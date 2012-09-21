@@ -27,6 +27,11 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    
+    [self.navigationController.navigationBar setTintColor:[UIColor whiteColor]];
+    
+    UIImageView *imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"icon-57.png"]];
+    self.navigationItem.titleView = imageView;
 }
 
 - (void)viewDidUnload

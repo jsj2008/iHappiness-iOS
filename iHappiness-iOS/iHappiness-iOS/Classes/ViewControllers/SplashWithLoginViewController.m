@@ -12,6 +12,7 @@
 
 #define KEYBOARD_OFFSET 180
 #define SPLASH_ANIMATION_DURATION 1
+#define LOGO_REDUCTION_FACTOR 0.5
 
 @interface SplashWithLoginViewController ()
 /**
@@ -38,13 +39,18 @@
  @since 1.0
  */
 - (void)addNotifications;
-
 /**
  Method that remove all the notifications needed in the VC
  @author Pedro
  @since 1.0
  */
 - (void)removeNotifications;
+/**
+ Method that init the login complete animation
+ @author Pedro
+ @since 1.0
+ */
+- (void)initLoginCompleteAnimation;
 
 /**
  Method called when the LoginService returns an OK notification
@@ -203,6 +209,16 @@
     [[NSNotificationCenter defaultCenter] removeObserver:self name:UIKeyboardWillHideNotification object:nil];
 }
 
+- (void)initLoginCompleteAnimation {
+    int finalYOffset = self.logoImageView.frame.origin.y + (self.logoImageView.frame.size.height/2*LOGO_REDUCTION_FACTOR);
+    
+    [UIView animateWithDuration:SPLASH_ANIMATION_DURATION animations:^{
+        CGAffineTransform translation = CGAffineTransformMakeTranslation(0, -finalYOffset);
+        CGAffineTransform reduction = CGAffineTransformMakeScale(LOGO_REDUCTION_FACTOR, LOGO_REDUCTION_FACTOR);
+        [self.logoImageView setTransform:CGAffineTransformConcat(reduction,translation)];
+    }];
+}
+
 - (void)loginComplete {
     [self.activityIndicator stopAnimating];
     //Enable the initsession button
@@ -218,6 +234,8 @@
     
     //Launch the segue to the next viewcontroller
     [self performSelector:@selector(performSegueWithIdentifier:sender:) withObject:@"LoginOk" afterDelay:toast.displayTime];
+    
+    [self initLoginCompleteAnimation];
 }
 
 - (void)loginFail {
