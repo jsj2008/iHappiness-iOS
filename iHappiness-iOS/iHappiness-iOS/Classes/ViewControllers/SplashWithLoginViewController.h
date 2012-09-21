@@ -11,11 +11,12 @@
 @interface SplashWithLoginViewController : UIViewController
 
 @property (strong, nonatomic) IBOutlet UIImageView *logoImageView;
+@property (strong, nonatomic) IBOutlet UIActivityIndicatorView *activityIndicator;
+
+@property (strong, nonatomic) IBOutlet UIView *loginFieldsView;
 @property (strong, nonatomic) IBOutlet UITextField *userTxtFld;
 @property (strong, nonatomic) IBOutlet UITextField *passwordTxtFld;
-
-@property (strong, nonatomic) IBOutlet UIActivityIndicatorView *activityIndicator;
-@property (strong, nonatomic) IBOutlet UIButton *initSesionBtn;
+@property (strong, nonatomic) IBOutlet UIButton *startSessionBtn;
 @property (strong, nonatomic) IBOutlet UIButton *cancelInitSession;
 
 //IBActions
