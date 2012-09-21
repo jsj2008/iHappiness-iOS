@@ -210,7 +210,7 @@
 }
 
 - (void)initLoginCompleteAnimation {
-    int finalYOffset = self.logoImageView.frame.origin.y + (self.logoImageView.frame.size.height/2*LOGO_REDUCTION_FACTOR);
+    int finalYOffset = self.logoImageView.frame.origin.y + (self.logoImageView.frame.size.height/2*LOGO_REDUCTION_FACTOR) + 10;
     
     [UIView animateWithDuration:SPLASH_ANIMATION_DURATION animations:^{
         CGAffineTransform translation = CGAffineTransformMakeTranslation(0, -finalYOffset);
@@ -264,6 +264,17 @@
         self.view.transform = CGAffineTransformIdentity;
     }];
     
+}
+
+#pragma mark - UItextFied Delegates
+//Delegate added at StoryBoard
+- (BOOL) textFieldShouldReturn:(UITextField *)textField{
+    if (self.userTxtFld == textField) {
+        [self.passwordTxtFld becomeFirstResponder];
+    }else if (self.passwordTxtFld == textField){
+        [self initSesionBtnPressed:nil];
+    }
+    return YES;
 }
 
 @end
