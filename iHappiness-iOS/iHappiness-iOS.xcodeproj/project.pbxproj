@@ -1060,11 +1060,15 @@
 		34AC0E2815CBEF73006ED814 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Raimundo Alonso-Cuevillas (43QS9KPHU3)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Raimundo Alonso-Cuevillas (43QS9KPHU3)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iHappiness-iOS/iHappiness-iOS-Prefix.pch";
 				INFOPLIST_FILE = "iHappiness-iOS/iHappiness-iOS-Info.plist";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "4AC1CD71-96EC-491D-BA1F-AB7CD1587CB5";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "4AC1CD71-96EC-491D-BA1F-AB7CD1587CB5";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;

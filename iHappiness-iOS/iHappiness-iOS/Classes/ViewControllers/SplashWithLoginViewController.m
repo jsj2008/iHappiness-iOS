@@ -11,6 +11,8 @@
 #import "MVYToast.h"
 
 #define KEYBOARD_OFFSET 180
+#define SPLASH_ANIMATION_DURATION 1
+#define LOGO_REDUCTION_FACTOR 0.5
 
 @interface SplashWithLoginViewController ()
 /**
@@ -26,18 +28,29 @@
  */
 - (void)configureLabels;
 /**
+ Method that init the splash main animation
+ @author Pedro
+ @since 1.0
+ */
+- (void)initSplashAnimation;
+/**
  Method that add all the notifications needed in the VC
  @author Pedro
  @since 1.0
  */
 - (void)addNotifications;
-
 /**
  Method that remove all the notifications needed in the VC
  @author Pedro
  @since 1.0
  */
 - (void)removeNotifications;
+/**
+ Method that init the login complete animation
+ @author Pedro
+ @since 1.0
+ */
+- (void)initLoginCompleteAnimation;
 
 /**
  Method called when the LoginService returns an OK notification
@@ -71,10 +84,11 @@
 
 @implementation SplashWithLoginViewController
 @synthesize logoImageView = _logoImageView;
+@synthesize activityIndicator = _activityIndicator;
+@synthesize loginFieldsView = _loginFieldsView;
 @synthesize userTxtFld = _userTxtFld;
 @synthesize passwordTxtFld = _passwordTxtFld;
-@synthesize activityIndicator = _activityIndicator;
-@synthesize initSesionBtn = _initSesionBtn;
+@synthesize startSessionBtn = _initSesionBtn;
 @synthesize cancelInitSession = _cancelInitSession;
 
 - (void)viewDidLoad
@@ -91,8 +105,9 @@
     [self setPasswordTxtFld:nil];
     [self setLogoImageView:nil];
     [self setActivityIndicator:nil];
-    [self setInitSesionBtn:nil];
+    [self setStartSessionBtn:nil];
     [self setCancelInitSession:nil];
+    [self setLoginFieldsView:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
 }
@@ -102,6 +117,9 @@
     [self addNotifications];
     
     [self.navigationController setNavigationBarHidden:TRUE];
+    
+    //Launch the splash animation
+    [self  performSelector:@selector(initSplashAnimation) withObject:nil afterDelay:SPLASH_ANIMATION_DURATION];
 }
 
 - (void)viewWillDisappear:(BOOL)animated
@@ -120,7 +138,7 @@
 
 - (IBAction)initSesionBtnPressed:(id)sender {
     //Disable the initsession button to avoid repeating connections
-    [self.initSesionBtn setEnabled:FALSE];
+    [self.startSessionBtn setEnabled:FALSE];
     
     NSString *userName = [self.userTxtFld text];
     NSString *password = [self.passwordTxtFld text];
@@ -144,11 +162,31 @@
     
     [self.activityIndicator stopAnimating];
     
+    //Splash animation initial configuration
+    [self.logoImageView setTransform:CGAffineTransformMakeTranslation(0, 100)];
+    [self.loginFieldsView setAlpha:0.0];
+    [self.loginFieldsView setHidden:NO];
+    
     [self configureLabels];
 }
 
 - (void)configureLabels {
     
+}
+
+- (void)initSplashAnimation {
+    
+    [UIView animateWithDuration:SPLASH_ANIMATION_DURATION
+                     animations:^ {
+                         [self.logoImageView setTransform:CGAffineTransformIdentity];
+                     } completion:^(BOOL finished) {
+                         [UIView animateWithDuration:SPLASH_ANIMATION_DURATION
+                                          animations:^ {
+                                              [self.loginFieldsView setAlpha:1.0];
+                                          }
+                          ];
+                     }
+     ];
 }
 
 - (void)addNotifications {
@@ -171,23 +209,39 @@
     [[NSNotificationCenter defaultCenter] removeObserver:self name:UIKeyboardWillHideNotification object:nil];
 }
 
+- (void)initLoginCompleteAnimation {
+    int finalYOffset = self.logoImageView.frame.origin.y + (self.logoImageView.frame.size.height/2*LOGO_REDUCTION_FACTOR) + 10;
+    
+    [UIView animateWithDuration:SPLASH_ANIMATION_DURATION animations:^{
+        CGAffineTransform translation = CGAffineTransformMakeTranslation(0, -finalYOffset);
+        CGAffineTransform reduction = CGAffineTransformMakeScale(LOGO_REDUCTION_FACTOR, LOGO_REDUCTION_FACTOR);
+        [self.logoImageView setTransform:CGAffineTransformConcat(reduction,translation)];
+    }];
+}
+
 - (void)loginComplete {
     [self.activityIndicator stopAnimating];
     //Enable the initsession button
-    [self.initSesionBtn setEnabled:TRUE];
+    [self.startSessionBtn setEnabled:TRUE];
     
     //Show success message
     MVYToast *toast = [[MVYToast alloc] initWithMessage:@"Bienvenido mobiveriano!" andImageName:@"icon-57.png"];
     [toast show];
     
+    //Clear the textFields
+    [self.userTxtFld setText:@""];
+    [self.passwordTxtFld setText:@""];
+    
     //Launch the segue to the next viewcontroller
     [self performSelector:@selector(performSegueWithIdentifier:sender:) withObject:@"LoginOk" afterDelay:toast.displayTime];
+    
+    [self initLoginCompleteAnimation];
 }
 
 - (void)loginFail {
     [self.activityIndicator stopAnimating];
     //Enable the initsession button
-    [self.initSesionBtn setEnabled:TRUE];
+    [self.startSessionBtn setEnabled:TRUE];
     
     //Show error message
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error en login" 
@@ -210,6 +264,17 @@
         self.view.transform = CGAffineTransformIdentity;
     }];
     
+}
+
+#pragma mark - UItextFied Delegates
+//Delegate added at StoryBoard
+- (BOOL) textFieldShouldReturn:(UITextField *)textField{
+    if (self.userTxtFld == textField) {
+        [self.passwordTxtFld becomeFirstResponder];
+    }else if (self.passwordTxtFld == textField){
+        [self initSesionBtnPressed:nil];
+    }
+    return YES;
 }
 
 @end
